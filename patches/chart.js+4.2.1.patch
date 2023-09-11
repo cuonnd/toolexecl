@@ -1,0 +1,16 @@
+diff --git a/node_modules/chart.js/dist/chart.js b/node_modules/chart.js/dist/chart.js
+index def5d25..a3edbf1 100644
+--- a/node_modules/chart.js/dist/chart.js
++++ b/node_modules/chart.js/dist/chart.js
+@@ -10138,9 +10138,9 @@ class LinearScaleBase extends Scale {
+             start -= offset;
+             end += offset;
+         }
+-        this._startValue = start;
++        this._startValue = this.min;
+         this._endValue = end;
+-        this._valueRange = end - start;
++        this._valueRange = end - this.min;
+     }
+     getLabelForValue(value) {
+         return formatNumber(value, this.chart.options.locale, this.options.ticks.format);

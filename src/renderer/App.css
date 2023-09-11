@@ -1,0 +1,220 @@
+/*
+ * @NOTE: Prepend a `~` to css file paths that are in your node_modules
+ *        See https://github.com/webpack-contrib/sass-loader#imports
+ */
+@import 'react-circular-progressbar/dist/styles.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@page {
+  /* prevents electron's additional margins around sheet-content (the first printedPage of: the html already sized 8.5x22) */
+  margin-top: 0cm;
+  margin-left: 0cm;
+  margin-right: 0cm;
+  /* prevents electron from printing a blank page between each sheet (the first and second printedPages of the tall html) */
+  margin-bottom: -5cm;
+  size: 595px 842px
+}
+
+body {
+  position: relative;
+  /* color: white; */
+  width: 70vw;
+  margin: 0 auto;
+  /* background: linear-gradient(
+    200.96deg,
+    #fedc2a -29.09%,
+    #dd5789 51.77%,
+    #7a2c9e 129.35%
+  ); */
+  /* overflow-y: hidden; */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  scroll-behavior: smooth;
+  font-family: 'Roboto', sans-serif;
+}
+
+button {
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  appearance: none;
+  font-size: 1.3rem;
+  box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12),
+    0px 18px 88px -4px rgba(24, 39, 75, 0.14);
+  transition: all ease-in 0.1s;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+a:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.Hello {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.box-logo {
+  text-align: center;
+}
+
+.linechart {
+  width: 700px !important;
+  height: 400px !important;
+  margin: 0 auto;
+}
+
+.chart {
+  text-align: center;
+
+}
+
+
+
+.gradedetail {
+  text-align: center;
+  margin-top: 30px !important;
+}
+
+.tablegrade {
+  display: flex;
+  justify-content: space-between;
+}
+
+.score {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 58px;
+}
+
+.scoredetail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.scoredetail>p {
+  margin-top: 2px;
+}
+
+.info {
+  line-height: 30px;
+}
+
+.content {
+  margin-top: 20px;
+}
+
+.content>p {
+  padding: 10px;
+}
+
+.tablefinal,
+.tablemidterm {
+  width: 45%;
+  text-align: center;
+}
+
+
+.feedback {
+  margin-top: 30px;
+}
+
+.CircularProgressbar {
+  width: 60px;
+  height: 60px;
+}
+
+.progresstop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.progressbottom {
+  display: flex;
+  align-items: center;
+  width: 65%;
+  margin-top: 20px;
+}
+
+.progressbottom .CircularProgressbar {
+  width: 14%;
+}
+
+.title {
+  text-align: center;
+  background-color: rgb(11 182 139 / 83%);
+  color: white;
+  padding: 10px;
+  border-bottom: 3px solid rgba(104, 102, 102, 0.5)
+}
+
+.title:last-child {
+  border-top-right-radius: 10px;
+}
+
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px silver;
+}
+
+th,
+td {
+  text-align: center;
+  padding: 5px;
+}
+
+tr:nth-child(odd) {
+  background-color: #dceffd
+}
+
+th {
+  background-color: #ffffff;
+  color: black;
+  border-bottom: 1px solid rgba(206, 205, 205, 0.941);
+}
+
+.tablemidterm,
+.tablefinal {
+  border: 1px solid rgba(206, 205, 205, 0.941);
+  border-radius: 10px;
+}
+
+.apexcharts-svg {
+  height: 210px;
+}
